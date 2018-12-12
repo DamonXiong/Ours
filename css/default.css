@@ -20,9 +20,10 @@
 .milky {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
   text-transform: uppercase;
-  display: none;
+  display: block;
   font-size: 22px;
-  color: #f1ebe5;
+  color: #f1eeee;
+  /*color: #f1ebe5;*/
   text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
   font-weight: bold;
   letter-spacing: -4px;
@@ -34,4 +35,17 @@
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 20px;*/
+}
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+  /*灰色调*/
+  /*-webkit-filter:grayscale(100%)*/
+
 }

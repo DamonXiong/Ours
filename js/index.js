@@ -7,7 +7,7 @@
     together.setMinutes(0);
     together.setSeconds(0);
     together.setMilliseconds(0);
-    $('#background')[0].play();
+    // $('#background')[0].play();
 
     if (!document.createElement('canvas').getContext) {
     	var msg = document.createElement("div");
