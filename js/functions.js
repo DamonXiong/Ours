@@ -93,7 +93,9 @@ function startHeartAnimation() {
         $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
         if (progress >= str.length) {
           clearInterval(timer);
-          $("#code").typewriter();
+          setTimeout(() => {
+            $("#code").typewriter();
+          }, 15000);
         }
       }, 75);
     });
@@ -147,8 +149,8 @@ function showLoveU() {
 }
 
 function restartGarden() {
-  $('#loveu').fadeOut(1000, function () {
-    $('#messages').fadeOut(1000, function () {
+  $('#loveu').fadeOut(3000, function () {
+    $('#messages').fadeOut(3000, function () {
       garden.clear();
       startHeartAnimation();
     });
